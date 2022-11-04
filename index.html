@@ -9,88 +9,96 @@
     <link rel="stylesheet" href="css/all.min.css">
     <title>UNINE Platform</title>
 </head>
-
 <body>
-    <!-- start Navbar in website -->
-    <nav>
-        <div class="container">
-            <a class="navbar-logo" href="">
-                <img src="img/logo.png" alt="">
-            </a>
-            <div class="links">
-                <ul class="links-navbar">
-                    <li>
-                        <a href="#">Learn</a>
-                    </li>
-                    <li>
-                        <a href="#">App</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="">Desktop Application</a>
-                            </li>
-                            <li>
-                                <a href="">Mobile Application</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">Community</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="">People</a>
-                            </li>
-                            <li>
-                                <a href="">Person</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">Unine at Work</a>
-                    </li>
-                </ul>
+
+    <!-- start Header in website -->
+    <header class="header">
+        <nav>
+            <div class="container">
+                <a class="navbar-logo" href="">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="links">
+                    <ul class="links-navbar">
+                        <li>
+                            <a href="#">Learn</a>
+                        </li>
+                        <li>
+                            <a href="#">App</a>
+                            <img src="img/arrow-down.png" cl alt="">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Desktop Application</a>
+                                </li>
+                                <li>
+                                    <a href="">Mobile Application</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Community</a>
+                            <img src="img/arrow-down.png" cl alt="">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">People</a>
+                                </li>
+                                <li>
+                                    <a href="">Person</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Unine at Work</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <a href="">Sign up</a>
+                    <a href="">Get a demo</a>
+                </div>
             </div>
-            <div class="btn">
-                <a href="">Sign up</a>
-                <a href="">Get a demo</a>
+        </nav>
+        <section class="landing">
+            <div class="container">
+                <div class="left-box">
+                    <h1>More Payment Options Better than Cash</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id optio, nisi hic reprehenderit aperiam beatae quaerat quod aspernatur aut, porro assumenda eos sunt dicta obcaecati recusandae dolores expedita a nostrum?</p>
+                    <div class="os-btn">
+                        <a class="app-btn" href="http:apple.com">
+                            <img src="img/apple.png" class="icon-apple" alt="">
+                            <p>Available on the <br/> <span class="big-txt">App Store</span></p>
+                        </a>
+                        <a class="app-btn" href="http:google.com">
+                            <img src="img/goole.png"  class="icon-google" alt="">
+                            <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <img src="img/mobile.png" width="300px"alt="">
+                </div>
             </div>
-        </div>
-    </nav>
-    <section class="landing">
-        <div class="left-box">
-            <h1>More Payment Options Better than Cash</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id optio, nisi hic reprehenderit aperiam beatae quaerat quod aspernatur aut, porro assumenda eos sunt dicta obcaecati recusandae dolores expedita a nostrum?</p>
-            <div class="os-btn">
-                
-            </div>
-        </div>
-        <div class="right-box">
-            <img src="" alt="">
-        </div>
-    </section>
-    <!-- End Navbar in website -->
+        </section>
+    </header>
+    <!-- End Header in Website -->
     <!-----Transaction section start----------->
-    <section class="section2">
-        <div class="transaction">
+    <section class="transaction-section">
+        <div class="container">
             <!-----Title----->
-            <div class="title">
+            <div class="section-title">
                 <h2>Safe & Convenient Transaction</h2>
-            </div>
-            <!-----Under Title----->
-            <div class="under-title">
                 <p>
                     Want to pay anything so easy with the touch of a finger. Through UNINE, you can make practically any transaction.
                 </p>
             </div>
-            <!-----4 Box----->
-            <div class="box">
+            <!-----Box Featuers ----->
+            <div class="cards">
                 <div class="card">
                     <div class="icon-money">
                         <img src="img/guarantee.png" alt="guarantee" width="40" height="40">
                     </div>
-                    <div class="title-pra">
+                    <div class="text-card">
                         <h4>Always Protected</h4>
-                    </div>
-                    <div class="pra">
                         <p>Shopping with UNINE is even more secure thanks to Buyer Protection.</p>
                     </div>
                 </div>
@@ -98,10 +106,8 @@
                     <div class="icon-money">
                         <img src="img/big-bag-of-coins.png" alt="big-bag-of-coins" width="40" height="40">
                     </div>
-                    <div class="title-pra">
+                    <div class="text-card">
                         <h4>Get Reward</h4>
-                    </div>
-                    <div class="pra">
                         <p>You can keep using your favorite card and keep getting rewards.</p>
                     </div>
                 </div>
@@ -109,10 +115,8 @@
                     <div class="icon-money">
                         <img src="img/hand.png" alt="money-hand" width="40" height="40">
                     </div>
-                    <div class="title-pra">
+                    <div class="text-card">
                         <h4>No Hidden Fees</h4>
-                    </div>
-                    <div class="pra">
                         <p>You will only be charged when selling goods or requesting payment.</p>
                     </div>
                 </div>
@@ -120,10 +124,8 @@
                     <div class="icon-money">
                         <img src="img/coin.png" alt="coin" width="40" height="40">
                     </div>
-                    <div class="title-pra">
+                    <div class="title-card">
                         <h4>Free shipping</h4>
-                    </div>
-                    <div class="pra">
                         <p>Changed your mind after buying? Send back the item you purchased.</p>
                     </div>
                 </div>
@@ -132,235 +134,205 @@
     </section>
     <hr>
     <!-- Start Accounts Section -->
-    <div class="section">
-        <div class="Bank">
-            <h1>Bank Accounts</h1>
-            <p>High interest, FDIC insured checking for individuals and businesses</p>
-            <a href="#">Learn more</a>
-            <div class="balance">
-                <h5>Balance After Pauout</h5>
-                <h1>$3,150.00</h1>
+    <div class="accounts-section">
+        <div class="container">
+            <div class="bank-card">
+                <h1>Bank Accounts</h1>
+                <p>High interest, FDIC insured checking for individuals and businesses</p>
+                <img src="img/icon.png" alt="">
+                <a href="#">Learn more</a>
+                <div class="balance">
+                    <h5>Balance After Pauout</h5>
+                    <h1>$3,150.00</h1>
+                </div>
+            </div>
+            <div class="cash-card">
+                <h2>Keep your cash flow clear and keep increasing </h2>
+                <p>See it all at a glance when you link your cash accounts,credit cards,investments,and bills</p>
+                <a href="#">
+                    Try for now
+                    <img src="icon/arrow.png" alt="Arrow Icon">
+                    </a>
             </div>
         </div>
-        <div class="cash">
-            <h1>Keep your cash flow clear and keep increasing </h1>
-            <p>See it all at a glance when you link your cash accounts,credit cards,investments,and bills</p>
-        </div>
-        <a href="#">Try for now </a>
      </div>
     <!-- End Accoutns Section -->
-    <!-- Start Feature Section  -->
+    <!-- Start Payments Section  -->
     <div class="payment">
-        <h1>Manage regular payments easily</h1>
-        <div class="inner">
-            <div class="global">
-                <h3>Globality</h3>
-                <p>Send payments to the person in frint of you and the rest of the world.</p>
-            </div>
-            <div class="integrte"> 
-                <h3>Integrate</h3>
-            <p>We work with local banks and overseas banks so you don't have to worry.</p> 
-        </div>
-        </div>
-        <div class="transfer">
-            <div class="Pay">
-                <h1>Payments</h1>
-                <p>Free instant book transfers.Custom fund flows.Send and receive ACH,checks,and more.</p>
-                <div class="icons">
-                    <div class="save">
-                        <p>Save</p>
-                    </div>
-                    <div class="send">
-                        <p>Sent</p>
-                    </div>
-                    <div class="ballance">
-                        <p>Balance</p>
-                    </div>
+        <div class="container">
+            <div class="cards-payement">
+                <h2>Manage regular payments easily</h2>
+                <div class="card">
+                    <img src="img/icon.png" class="icon" alt="">
+                    <h3>Globality</h3>
+                    <p>Send payments to the person in frint of you and the rest of the world.</p>
+                </div>
+                <div class="card">
+                    <img src="img/icon.png" class="icon" alt=""> 
+                    <h3>Integrate</h3>
+                    <p>We work with local banks and overseas banks so you don't have to worry.</p> 
                 </div>
             </div>
-            <div class="card">
-                <h3>TRansfer money</h3>
-                <P>SEND TO</P>
-                <img src="">
-                <h4>Annisa Azzahra</h4>
-                <p>annisaazzahra@example.com</p>
-                <div class="money">
-                    <h2>$5.000</h2>
+            <div class="transfer">
+                <div class="Pay">
+                    <h1>Payments</h1>
+                    <p>Free instant book transfers.Custom fund flows.Send and receive ACH,checks,and more.</p>
+                    <div class="icons">
+                        <div class="save">
+                            <p>Save</p>
+                        </div>
+                        <div class="send">
+                            <p>Sent</p>
+                        </div>
+                        <div class="ballance">
+                            <p>Balance</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="numbers">
-                    <div class="one">1</div>
-                    <div class="two">2</div>
-                    <div class="three">3</div>
+                <div class="card">
+                    <h3>TRansfer money</h3>
+                    <P>SEND TO</P>
+                    <img src="" alt> 
+                    <h4>Annisa Azzahra</h4>
+                    <p>annisaazzahra@example.com</p>
+                    <div class="money">
+                        <h2>$5.000</h2>
+                    </div>
+                    <div class="numbers">
+                        <div class="one">1</div>
+                        <div class="two">2</div>
+                        <div class="three">3</div>
+                    </div>
                 </div>
             </div>
         </div>
      </div>
-    <!-- End Feature Section  -->
+    <!-- End Payments Section  -->
     <!-----Customers section start----------->
-    <section class="section4">
-        <div class="customer">
-            <div class="box">
-                <!-----Title----->
-                <div class="title">
-                    <h2>Our Customers Says</h2>
+    <section class="customers">
+        <div class="container">
+            <!-----Title----->
+            <div class="title">
+                <h2>Our Customers Says</h2>
+            </div>
+            <!-----Button Previou----->
+            <div class="button-previou">
+                <button><img src="img/previous.png" alt="previous" width="40" height="40"></button>
+            </div>
+            <!----- 2 Box Customer info ----->
+            <div class="box-customer">
+                <div class="icon-double-quotes">
+                    <img src="img/double-quotes.png" alt="double-quotes" width="40" height="40">
                 </div>
-                <!-----Button Previou----->
-                <div class="button-previou">
-                    <button><img src="img/previous.png" alt="previous" width="40" height="40"></button>
+                <div class="tital-pra">
+                    <h4>I paid off $24,000 first year</h4>
+                    <p>
+                        “Without the system and the support.I
+                        br would have been canoeing without a paddle!
+                        Thanks for being my paddle, UNINE. 😉👍💪”
+                    </p>
                 </div>
-                <!----- 2 Box Customer info ----->
-                <div class="box-customer">
-                    <div class="icon-double-quotes">
-                        <img src="img/double-quotes.png" alt="double-quotes" width="40" height="40">
-                    </div>
-                    <div class="tital-pra">
-                        <h4>I paid off $24,000 first year</h4>
-                    </div>
-                    <div class="pra">
-                        <p>
-                            “Without the system and the support.I
-                            br would have been canoeing without a paddle!
-                            Thanks for being my paddle, UNINE. 😉👍💪”
-                        </p>
-                    </div>
-                    <div class="customer-info">
-                        <div class="customer-photo">
-                            <img src="img/bussiness-man.png" alt="man" width="80" height="80">
-                        </div>
-                        <div class="name-customer">
+                <div class="customer-info">
+                    <div class="customer-photo">
+                        <img src="img/bussiness-man.png" alt="man" width="80" height="80">
+                        <div class="person-info">
                             <p>Ronald Richards</p>
-                        </div>
-                        <div class="working-years">
                             <p>First Years of using UNINE</p>
                         </div>
-                        <div class="rating">
-                            <img src="img/rating.png" alt="rating" width="80" height="80">
-                        </div>
+                    </div>
+                    <div class="rating">
+                        <img src="img/rating.png" alt="rating" width="80" height="80">
                     </div>
                 </div>
-                <div class="box-customer">
-                    <div class="icon-double-quotes">
-                        <img src="img/double-quotes.png" alt="double-quotes" width="40" height="40">
+            </div>
+            <div class="box-customer">
+                <div class="icon-double-quotes">
+                    <img src="img/double-quotes.png" alt="double-quotes" width="40" height="40">
+                </div>
+                <div class="tital-pra">
+                    <h4>I paid off $24,000 first year</h4>
+                    <p>
+                        “Without the system and the support.I
+                        br would have been canoeing without a paddle!
+                        Thanks for being my paddle, UNINE. 😉👍💪”
+                    </p>
+                </div>
+                <div class="customer-info">
+                    <div class="customer-photo">
+                        <img src="img/bussiness-man.png" alt="man" width="80" height="80">
+                        <div class="person-info">
+                            <p>Ronald Richards</p>
+                            <p>First Years of using UNINE</p>
+                        </div>
                     </div>
-                    <div class="tital-pra">
-                        <h4>I paid off $24,000 first year</h4>
-                    </div>
-                    <div class="pra">
-                        <p>
-                            “When I got frustrated with Mint and its lack
-                            of flexibility. I found YNAB through some
-                            random blog post, I never looked back. 💰”
-                        </p>
-                    </div>
-                    <div class="Customer-info">
-                        <div class="customer-photo">
-                            <img src="img/bussiness-man.png" alt="man" width="80" height="80">
-                        </div>
-                        <div class="name-customer">
-                            <p>Wade Warren</p>
-                        </div>
-                        <div class="working-years">
-                            <p>3 Years of using UNINE</p>
-                        </div>
-                        <div class="rating">
-                            <img src="img/rating.png" alt="rating" width="80" height="80">
-                        </div>
+                    <div class="rating">
+                        <img src="img/rating.png" alt="rating" width="80" height="80">
                     </div>
                 </div>
-                <!-----Button Next----->
-                <div class="button-next">
-                    <button><img src="img/next.png" alt="next" width="40" height="40"></button>
-                </div>
+            </div>
+            <!-----Button Next----->
+            <div class="button-next">
+                <button><img src="img/next.png" alt="next" width="40" height="40"></button>
             </div>
         </div>
     </section>
     <!-- Start Get App section -->
-    <section>
-        <div>
-            <h2>
-                <center>
-                    Get Unine App on Google
-                </center>
-            </h2>
+    <section class="app-section">
+        <div class="container">
+            <div>
+                <h2>Get Unine App on Google</h2>
+                <h2>Play or App Store</h2>
+            </div>
+            <div>
+                <p>Build your financial literacy within a transparent community.</p>
+                <p>Follow other investors, share insights with people.</p>
+            </div>
+            <div class="os-btn">
+                <a class="app-btn" href="http:apple.com">
+                    <img src="img/apple.png" class="icon-apple" alt="">
+                    <p>Available on the <br/> <span class="big-txt">App Store</span></p>
+                </a>
+                <a class="app-btn" href="http:google.com">
+                    <img src="img/goole.png"  class="icon-google" alt="">
+                    <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
+                </a>
+            </div>
         </div>
-        <div>
-            <h2>
-                <center>
-                    Play or App Store
-                </center>
-            </h2>
-        </div>
-        <div>
-            <p>
-                <center>
-                    <h4>
-                        Build your financial literacy within a transparent community.
-                    </h4>
-                    <h4>
-                        Follow other investors, share insights with people.
-                    </h4>
-                </center>
-            </p>
-        </div>
+        
     </section>
     <!-- End Get App Section -->
-
     <!-- Start Footer Section -->
     <section class="footer">
-        <div>
-            <center>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="logo_1.png" alt="" width="250px">
-                        </td>
-                        <td>
-                            <img src="logo_2.png" alt="" width="165px">
-                        </td>
-                    </tr>
-                </table>
-            </center>
-        </div>
-        <div>
-            <center>
-                <table>
-                    <tr>
-                        <td>
-                            <i class="fa-solid fa-shekel-sign"></i>
-                            <i> <strong>Unine</strong> </i>
-                            <br>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-discord"></i>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Technology Park 8-14</li>
-                                <li>Marie Curie Street</li>
-                                <li>08042 Barcelona</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Technology Park 8-14</li>
-                                <li>Marie Curie Street</li>
-                                <li>08042 Barcelona</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Technology Park 8-14</li>
-                                <li>Marie Curie Street</li>
-                                <li>08042 Barcelona</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </center>
-        </div>
-        <hr>
-        <div role="contentinfo">
-            <p>©2022 COPYRIGHT BY UNINE</p>
+        <div class="container">
+            <div class="up-box">
+                <div class="icon">
+                    <img src="img/log.png" alt="">
+                    <div class="icons">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instegram.png" alt="">
+                        <img src="img/discord.png" alt="">
+                    </div>
+                </div>
+                <ul class="links">
+                    <li>Technology Park 8-14</li>
+                    <li>Marie Curie Street</li>
+                    <li>08042 Barcelona</li>
+                </ul>
+                <ul class="links">
+                    <li>Learn</li>
+                    <li>Apps</li>
+                    <li>Communtiy</li>
+                </ul>
+                <ul class="links">
+                    <li>Legal Mentions</li>
+                    <li>Terms of Services</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </hr>
+            <div class="down-box">
+                <p>©2022 COPYRIGHT BY UNINE</p>
+            </div>
         </div>
     </section>
     <!-- End Footer Section -->
