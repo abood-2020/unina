@@ -17,6 +17,9 @@
     --gray-color:#EEEDF0;
     --light-color : #F8F8F8;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Larsseit'
 }
