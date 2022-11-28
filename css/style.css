@@ -12,6 +12,8 @@
 }
 .header nav .container{
     display: flex;
+    align-items: center;
+    justify-content:space-between;
 }
 .header{
     background-image: url('../img/background-website.png');
@@ -19,15 +21,124 @@
     height:100vh;
     color: white;
 }
-
+header .sign-btns a:first-child{
+    color: white;
+    padding: 0px 17px;
+}
 .links-navbar{
     display: flex;
     align-items: center;
 }
+header nav .links>ul >li{
+    padding: 0px 20px;
+}
+header nav .links ul > li> a{
+    color: white;
+    font-family: 'Larsseit-Light';
+    font-weight: 100;
+}
+header nav .links ul > li > a i{
+    padding-left: 5px;
+}
 .dropdown{
     position: relative;
+    display: inline-block;
 }
-.dropdown ul{
-    position:absolute;
+.dropdown .dropdown-menu{
     display: none;
+    position: absolute;
+    min-width: 125px;
+    padding: 4px 8px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.028);
+    backdrop-filter: blur(10px);
+    left: 20px;
+    transition: all 1s;
+}
+.dropdown .dropdown-menu li{
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown:hover ul{
+    display: block;
+}
+/* Start Style to Landing */
+.landing .container{
+    display: flex;
+    justify-content: space-between;
+}
+.landing .container .left-box{
+    width: 60%;
+    padding: 60px 0px 0px;
+}
+.landing .container .left-box h1{
+    font-size: 60px;
+}
+.landing .container .left-box p{
+    font-family: 'Larsseit-Thin';
+    width: 61%;
+    line-height: 1.8;
+}
+.landing .container .left-box .os-btn{
+    display: flex;
+}
+.landing .container .left-box .os-btn .app-btn{
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 0;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+.landing .container .left-box .os-btn .app-btn:hover {
+    background-color:white
+}
+.landing .container .left-box .os-btn .app-btn:hover .content ,
+ .landing .container .left-box .os-btn .app-btn:hover i{
+    color:var(--text-color);
+}
+.landing .container .left-box .os-btn .app-btn:last-child{
+    margin-left: 10px;
+}
+.landing .container .left-box .os-btn .app-btn .icon{
+    margin-right: 10px;
+}
+.landing .container .left-box .os-btn .app-btn .content{
+    width: 100%;
+}
+.landing .container .left-box .os-btn .app-btn .content p{
+    margin: 0;
+    font-size: 10px;
+}
+.landing .container .left-box .os-btn .app-btn .content span{
+    margin: 0;
+    font-size: 20px;
+    letter-spacing:2px
+}
+.landing .container .left-box .os-btn .app-btn i{
+    font-size: 30px;
+}
+.landing .container .right-box{
+    width: 40%;
+}
+.landing .container .right-box img{
+    width: 400px;
+    object-fit: cover;
+}
+.landing .container .rating{
+    display: inline-flex;
+    align-items: center;
+    min-width: 320px;
+}
+.landing .container .rating span{
+    color: var(--main-color);
+}
+.landing .container .rating .group-rate i{
+    color: var(--yellow-color);
 }

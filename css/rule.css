@@ -2,6 +2,14 @@
     font-family: 'Larsseit';
     src: url(../Fonts/Larsseit.otf);
 }
+@font-face {
+    font-family: 'Larsseit-Thin';
+    src: url(../Fonts/Larsseit-Thin.otf);
+}
+@font-face {
+    font-family: 'Larsseit-Light';
+    src: url(../Fonts/Larsseit-Light.otf);
+}
 :root{
     --main-color:#72E485;
     --yellow-color:#F9D658;
