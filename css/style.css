@@ -1,0 +1,33 @@
+/* Start Components in Website */
+.btn{
+    background-color: var(--main-color);
+    color:var(--black-color);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+/* End Components in website */
+.header nav{
+    padding: 30px;
+
+}
+.header nav .container{
+    display: flex;
+}
+.header{
+    background-image: url('../img/background-website.png');
+    background-size: cover;
+    height:100vh;
+    color: white;
+}
+
+.links-navbar{
+    display: flex;
+    align-items: center;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown ul{
+    position:absolute;
+    display: none;
+}

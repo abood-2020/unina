@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awsomwe Liabary to Icons -->
+    <!-- Font Awesome liabary -->
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- css Files Liabary to Icons -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/rule.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>UNINE Platform</title>
 </head>
 <body>
@@ -15,16 +19,15 @@
         <nav>
             <div class="container">
                 <a class="navbar-logo" href="">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo.png" alt="" width="140px">
                 </a>
                 <div class="links">
                     <ul class="links-navbar">
                         <li>
                             <a href="#">Learn</a>
                         </li>
-                        <li>
+                        <li class="dropdown">
                             <a href="#">App</a>
-                            <img src="img/arrow-down.png" cl alt="">
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="">Desktop Application</a>
@@ -34,9 +37,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="dropdown">
                             <a href="">Community</a>
-                            <img src="img/arrow-down.png" cl alt="">
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="">People</a>
@@ -51,9 +53,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="btn">
+                <div>
                     <a href="">Sign up</a>
-                    <a href="">Get a demo</a>
+                    <a href="" class="btn">Get a demo</a>
                 </div>
             </div>
         </nav>
@@ -71,6 +73,10 @@
                             <img src="img/goole.png"  class="icon-google" alt="">
                             <p>Get it on <br/> <span class="big-txt">Google Play</span></p>
                         </a>
+                        <div class="rating">
+                            <p>Excellent <span>4.9 out of 5</span></p>
+                            <img src="img/rating.png"  width="90px"alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="right-box">
