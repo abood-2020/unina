@@ -7,21 +7,23 @@
 }
 /* End Components in website */
 .header{
-    background-image: url('../img/background-website.png');
     background-size: cover;
-    height:100vh;
     color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    height: 90px;
+    overflow: hidden;
 }
 .header nav{
-    padding: 30px;
-
+    padding: 20px;
 }
 .header nav .container{
     display: flex;
     align-items: center;
     justify-content:space-between;
 }
-
 header .sign-btns a:first-child{
     color: white;
     padding: 0px 17px;
@@ -48,6 +50,9 @@ header nav .links ul > li> a{
 header nav .links ul > li > a i{
     padding-left: 5px;
 }
+header .navbar-logo img{
+    width: 140px;
+}
 .dropdown{
     position: relative;
     display: inline-block;
@@ -57,7 +62,7 @@ header nav .links ul > li > a i{
     position: absolute;
     min-width: 125px;
     padding: 4px 8px;
-    z-index: 1;
+    z-index: 10;
     background-color: rgba(255, 255, 255, 0.028);
     backdrop-filter: blur(10px);
     left: 20px;
@@ -72,10 +77,32 @@ header nav .links ul > li > a i{
 .dropdown:hover ul{
     display: block;
 }
+@media (max-width: 767px){
+    header .navbar-logo img{
+        width: 100px;
+    }
+    header nav .sign-btns{
+        display: none;
+    }
+    header nav .sign-btns{
+        display: none;
+    }
+}
 /* Start Style to Landing */
-.landing .container{
+.landing{
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url("../img/background-website.png");
+    background-size: cover;
+    position: relative;
+    padding: 20px 0px;
+}
+.landing .container .box-content{
     display: flex;
     justify-content: space-between;
+    color: white;
+    position:relative;
+    top: 90px;
 }
 
 .landing .container .left-box{
@@ -90,75 +117,96 @@ header nav .links ul > li > a i{
     width: 61%;
     line-height: 1.8;
 }
-.landing .container .left-box .os-btn{
-    display: flex;
+.landing .container .app-btns{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(-120px);
+    width: auto;
+    margin-top: 60px;
 }
-.landing .container .left-box .os-btn .app-btn{
+.landing .container .app-btns .os-btn{
+    display: flex;
+    margin-top: 30px;
+}
+.landing .container .app-btns .os-btn .app-btn{
     color: white;
     border-radius: 10px;
     border: 2px solid white;
     margin: 0;
-    width: 165px;
+    min-width: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
     transition: background-color 0.3s;
 }
-.landing .container .left-box .os-btn .app-btn:hover {
+.landing .container .app-btns .os-btn .app-btn:hover {
     background-color:white
 }
-.landing .container .left-box .os-btn .app-btn:hover .content ,
- .landing .container .left-box .os-btn .app-btn:hover i{
+.landing .container .app-btns .os-btn .app-btn:hover .content ,
+ .landing .container .app-btns .os-btn .app-btn:hover i{
     color:var(--text-color);
 }
-.landing .container .left-box .os-btn .app-btn:last-child{
+.landing .container .app-btns .os-btn .app-btn:last-child{
     margin-left: 10px;
 }
-.landing .container .left-box .os-btn .app-btn .icon{
+.landing .container .app-btns .os-btn .app-btn .icon{
     margin-right: 10px;
 }
-.landing .container .left-box .os-btn .app-btn .content{
+.landing .container .app-btns .os-btn .app-btn .content{
     width: 100%;
 }
-.landing .container .left-box .os-btn .app-btn .content p{
+.landing .container .app-btns .os-btn .app-btn .content p{
     margin: 0;
     font-size: 10px;
 }
-.landing .container .left-box .os-btn .app-btn .content span{
+.landing .container .app-btns .os-btn .app-btn .content span{
     margin: 0;
     font-size: 20px;
     letter-spacing:1.6px
 }
-.landing .container .left-box .os-btn .app-btn i{
+.landing .container .app-btns .os-btn .app-btn i{
     font-size: 30px;
 }
 .landing .container .right-box{
     width: 40%;
+    position: relative;
+    top: 80px;
 }
 .landing .container .right-box img{
     width: 400px;
     object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .landing .container .rating{
-    display: inline-flex;
     align-items: center;
     min-width: 320px;
+    display:flex;
+    margin: 40px 0 0 ;
+}
+.landing .container .rating p{
+    color: white !important;
 }
 .landing .container .rating span{
     color: var(--main-color);
 }
-.landing .container .rating .group-rate i{
+.landing .container .rating .group-rate{
+
+}
+.landing .container .rating .group-rate i{  
     color: var(--yellow-color);
+    margin: 0px 5px;
+    font-size: 18px;
 }
 @media (max-width: 767px){
-    header{
-        height:200vh;
+    .landing{
+        min-height: 100vh;
     }
-    header nav .sign-btns{
-        display: none;
-    }
-    .landing .container{
+    .landing .container .box-content{
         flex-direction: column;
     }
     .landing .container .left-box ,
@@ -170,7 +218,7 @@ header nav .links ul > li > a i{
         text-align: center;
     }
     .landing .container .left-box h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     .landing .container .left-box p{
         width: 100%;
@@ -182,6 +230,15 @@ header nav .links ul > li > a i{
     .landing .container .left-box .os-btn {
         justify-content: center;
     }
+    .landing .container .right-box{
+        height: 486px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        margin: 0px;
+        display: block;
+    }
     .landing .container .right-box img{
         width: 300px;
     }
@@ -190,6 +247,7 @@ header nav .links ul > li > a i{
 .transaction-section{
     padding: 100px 0px;
     background-color: var(--gray-color);
+    display: none;
 }
 .transaction-section .section-title{
     text-align: center;
@@ -236,5 +294,13 @@ header nav .links ul > li > a i{
 .transaction-section .container .cards .card .text-card p{
     color: gray;
     line-height: 1.8;
+}
+@media (max-width:780px){
+    .transaction-section .container .cards{
+        flex-direction: column;
+    }
+    .transaction-section .container .cards .card{
+        width: 100%;
+    }
 
 }
