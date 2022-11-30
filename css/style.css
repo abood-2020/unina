@@ -377,14 +377,23 @@ header .navbar-logo img{
 }
 .footer .container .up-box .links li{
     padding-bottom: 10px;
+    transition:color 0.5s;
+}
+.footer .container .up-box .links:not(:first-child) li{
+    padding-bottom: 20px;
+}
+.footer .container .up-box .links li:hover{
+    cursor: pointer;
+    color: var(--yellow-color);
 }
 .footer .container .up-box .icon-box > img{
     width: 120px;
 }
-.footer .container .down-box{
+.footer .down-box{
+    border-top: 1px solid rgba(100, 100, 100, 0.449);
+}
+.footer .down-box .container{
     padding: 20px 0px ;
     text-align: center;
-
 }
-
 /* End Style to Footer */
