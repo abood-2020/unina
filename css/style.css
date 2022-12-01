@@ -327,14 +327,23 @@ header .navbar-logo img{
     background-color: var(--light-color);
     border-radius:20px;
 }
+.transaction-section .container .cards .card:hover
+{
+ background-color: var(--main-color);
+}
 .transaction-section .container .cards .card .icon-money i{
     font-size: 30px;
-    padding: 10px 0px;
-    color: var(--main-color);
+    padding: 10px 10px;
+    color: black;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+
 }
-.transaction-section .container .cards .card .text-card{
-    
-}
+/* make event when the mouse is placed on the card  */
+
+
 .transaction-section .container .cards .card .text-card h4{
     padding: 10px 0px;
     font-size: 21px;
@@ -343,14 +352,148 @@ header .navbar-logo img{
     color: gray;
     line-height: 1.8;
 }
+/* make event when the mouse is placed on the text  */
+.transaction-section .container .cards .card .text-card p:hover{
+    color: var(--text-color);
+}
 @media (max-width:780px){
     .transaction-section .container .cards{
         flex-direction: column;
     }
     .transaction-section .container .cards .card{
         width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 990px) {
+    .transaction-section .container .cards{
+        flex-direction: column;
+    }
+    .transaction-section .container .cards .card{
+        width: 100%;
+        margin-bottom: 10px;
+
     }
 }
+
+/* Start Bank Accounts */
+.accounts-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+.accounts-section .bank-card{
+    background-image: url(../img/paper.png);
+    margin-top: 100px;
+    border-radius: 15px;
+    padding: 8px 43px 112px 25px;
+    width: 48%;
+    
+}
+.accounts-section .balance{
+    background-color: #ffffff99;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 22px;
+    margin-top: 10px;
+    float: right;
+}
+.accounts-section .bank-card p{
+    margin-bottom: 15px;
+}
+.accounts-section .balance h5{
+    padding-top: 1px;
+    font-size: 10px;
+    color: #b5b5b5;
+}
+.accounts-section .balance h3{
+    margin-top: 2px;
+}
+.accounts-section .bank-card a{
+    color: black;
+    margin-left: 5px;
+}
+.accounts-section .bank-card i{
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    padding: 4px 5px;
+}
+
+.accounts-section .cash-card{
+    width: 48%;
+    background-color: white;
+    margin-top: 100px;
+}
+.accounts-section .cash-card h2{
+    margin-top: 50px;
+    padding: 5px 22px;
+    font-size: xx-large;
+}
+.accounts-section .cash-card p{
+    padding: 5px 22px;
+    color: #8f8f8f;
+    margin-bottom: 30px;
+}
+.accounts-section .cash-card a{
+    padding: 8px 22px;
+    background-color: var(--main-color);
+    color: black;
+    margin-left: 24px;
+    border-radius: 7px;
+    font-size: small;
+}
+.accounts-section .cash-card i{
+    padding-left: 10px;
+}
+@media (max-width:780px){
+    .accounts-section .container{
+        display: block;
+    }
+    .accounts-section .bank-card{
+        width: 100%;
+    }
+    .accounts-section .cash-card{
+        width: 100%;
+
+    }
+}
+/* End Bank Accounts */
+
+/* Start Payments Section  */
+.payment .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.payment .cards-payement h2{
+    font-size: xx-large;
+}
+
+.payment  .cards-payement{
+    width: 49%;
+}
+.payment .cards-payement .card-pay{
+    display: flex;
+    justify-content: space-between;
+}
+.payment .cards-payement .card_left,
+.payment .cards-payement .card_right{
+    margin-top: 50px;
+}
+.payment .cards-payement .card_right{
+    width: 41%;
+}
+.payment .cards-payement i{
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.payment .transfer{
+    width: 48%;
+}
+/* End Payments Section  */
 /* start customers */
 .customers {
     background-color: #f8f8f8;
