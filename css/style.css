@@ -640,6 +640,72 @@ header .navbar-logo img{
     }
 }
 /* end customers */
+/*Start Get App section*/
+.app-section{
+    background-color: #72e484;
+}
+.app-section .container {
+    padding:50px;
+}
+.app-section .container  {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.app-section .container .Aheader .header1,
+.app-section .container .Aheader .header2{
+    padding-bottom: 20px;
+    word-spacing: 2px;
+    font-size: 30px;
+    letter-spacing: 1.1px;
+}
+.app-section .container .Aheader .header2{
+    padding-left: 60px;
+}
+
+.app-section .container .os-btn{
+display: flex;
+justify-content: space-around;
+
+}
+.app-section .container .paraghraf{
+    font-size:small;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #1f2021e1;
+}
+.app-section .container .os-btn .app-btn1 .content .big-txt,
+.app-section .container .os-btn .app-btn2 .content .big-txt{
+    font-size: 15px;
+}
+.app-section .container .os-btn .app-btn1,
+.app-section .container .os-btn .app-btn2{
+    background-color: black;
+    margin-right: 10px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: x-small;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+.app-section .container .os-btn .app-btn1 .icon1 i ,
+.app-section .container .os-btn .app-btn2 .icon2 i{
+    font-size: 20px;
+    color: white;
+    padding-right: 5px;
+}
+.app-section .container .os-btn .app-btn1 .content p ,
+.app-section .container .os-btn .app-btn2 .content p{
+font-size: 7px;
+color: rgba(255, 255, 255, 0.812);
+}
+/*End Get App section*/
 /* start Style to Footer */
 .footer{
     background-color: var(--text-color);
