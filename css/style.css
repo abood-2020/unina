@@ -26,7 +26,6 @@
     align-items: center;
     justify-content: flex-end;
 }
-
 nav > ul{
     display: flex;
 }
@@ -43,19 +42,12 @@ header .sign-btns a:first-child{
     color: white;
     padding: 0px 17px;
 }
-
 @media (min-width: 991px){
     .toogle-navbar{
         display: none;
     }
 }
 @media (max-width: 990px){
-    header nav .links{
- 
-    }
-    header nav .links > ul {
-    }
-
     .toogle-navbar{
         font-size: 30px;
     }
@@ -91,15 +83,18 @@ header .navbar-logo img{
 }
 .dropdown .dropdown-menu li{
     margin: 0;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 10px;
 }
 .dropdown:hover ul{
     display: block;
-    display: block;
 }
-
+#icons i {
+	padding-left: 10px;
+}
+#icons i:hover {
+	color: var(--main-color);
+	transition: 0.5s;
+}
 @media (max-width: 767px){
     header .navbar-logo img{
         width: 100px;
@@ -126,12 +121,30 @@ header .navbar-logo img{
         border-bottom: 1px solid var(--yellow-color);
     }
 }
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: var(--main-color); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: var(--text-color); /* Add a dark-grey background on hover */
+  }
+
 /* Start Style to Landing */
 .landing{
     min-height: 100vh;
-    background-color: #1f2021;
-    background-image: url("../img/background-website.png");
-    background-size: cover;
+    background: #1f2021;
     position: relative;
     padding: 20px 0px;
     z-index: 3;
@@ -145,7 +158,6 @@ header .navbar-logo img{
     justify-content: space-between;
     color: white;
 }
-
 .landing .container .left-box{
     width: 60%;
     min-height: 100px;
@@ -178,7 +190,7 @@ header .navbar-logo img{
     border-radius: 10px;
     border: 2px solid white;
     margin: 0;
-    min-width: 170px;
+    width: 155px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -207,7 +219,7 @@ header .navbar-logo img{
 }
 .landing .container .box-btns .os-btn .app-btn .content span{
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing:1.6px
 }
 .landing .container .box-btns .os-btn .app-btn i{
@@ -286,6 +298,7 @@ header .navbar-logo img{
     }
     .landing .container .box-btns .os-btn {
         margin-top: 5px;
+        justify-content: space-evenly;
     }
     .landing .container .rating{
         margin: 15px 0 0 ;
@@ -295,7 +308,20 @@ header .navbar-logo img{
 /* start section Two */
 .transaction-section{
     padding: 100px 0px;
-    background-color: var(--gray-color);
+    position: relative;
+}
+.transaction-section::after{
+    content: "";
+    background-image: url("../img/grid-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity:0.2;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .transaction-section .section-title{
     text-align: center;
@@ -304,13 +330,16 @@ header .navbar-logo img{
 .transaction-section .section-title h2{
     font-size: 42px;
     margin-bottom: 20px;
-    color: var(--text-color); 
+    color: var(--heading-color); 
 }
 .transaction-section .section-title p{
     color: rgb(160, 160, 160);
     padding: 0px;
-    font-size: 16px;
     margin: 0px;
+    word-spacing: 2px;
+    letter-spacing: 0.6px;
+    line-height: 1.6;
+    font-size: 17px;
 }
 .transaction-section .container .cards{
     display: flex;
@@ -319,41 +348,43 @@ header .navbar-logo img{
     width: 25%;
     height:300px;
     padding: 20px;
-    background-color:var();
     margin-left: 20px;
     display:flex;
     flex-direction: column;
     justify-items: center;
-    background-color: var(--light-color);
-    border-radius:20px;
+    background-color: white;
+    border-radius:13px;
+    transition: transform 0.4s ease-in-out;
 }
-.transaction-section .container .cards .card:hover
-{
- background-color: var(--main-color);
+.transaction-section .container .cards .card:hover{
+    background-color: var(--main-color);
+    transform: scale(1.01);
+
 }
 .transaction-section .container .cards .card .icon-money i{
     font-size: 30px;
     padding: 10px 10px;
-    color: black;
+    color: var(--heading-color);
     background-color: var(--light-color);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
-
 
 }
 /* make event when the mouse is placed on the card  */
-
-
 .transaction-section .container .cards .card .text-card h4{
-    padding: 10px 0px;
+    padding: 10px 0px 20px;
     font-size: 21px;
+    text-align: left;
+    color:var(--heading-color)
+    
 }
 .transaction-section .container .cards .card .text-card p{
-    color: gray;
+    color:rgb(198, 198, 198);
+    font-size: 18px;
     line-height: 1.8;
 }
 /* make event when the mouse is placed on the text  */
-.transaction-section .container .cards .card .text-card p:hover{
+.transaction-section .container .cards .card:hover .text-card p{
     color: var(--text-color);
 }
 @media (max-width:780px){
@@ -362,10 +393,8 @@ header .navbar-logo img{
     }
     .transaction-section .container .cards .card{
         width: 100%;
-        margin-bottom: 10px;
-        margin-left: 0px;
+        margin: 0px 0px 10px 0px;
     }
-
 }
 @media (max-width: 990px) {
     .transaction-section .container .cards{
@@ -374,11 +403,12 @@ header .navbar-logo img{
     .transaction-section .container .cards .card{
         width: 100%;
         margin-bottom: 10px;
-
     }
 }
-
 /* Start Bank Accounts */
+.accounts-section{
+    padding: 80px 0px;
+}
 .accounts-section .container{
     display: flex;
     justify-content: space-between;
@@ -389,7 +419,6 @@ header .navbar-logo img{
     border-radius: 15px;
     padding: 8px 43px 112px 25px;
     width: 48%;
-    
 }
 .accounts-section .balance{
     background-color: #ffffff99;
@@ -424,7 +453,6 @@ header .navbar-logo img{
 
 .accounts-section .cash-card{
     width: 48%;
-    background-color: white;
     margin-top: 100px;
 }
 .accounts-section .cash-card h2{
@@ -436,14 +464,6 @@ header .navbar-logo img{
     padding: 5px 22px;
     color: #8f8f8f;
     margin-bottom: 30px;
-}
-.accounts-section .cash-card a{
-    padding: 8px 22px;
-    background-color: var(--main-color);
-    color: black;
-    margin-left: 24px;
-    border-radius: 7px;
-    font-size: small;
 }
 .accounts-section .cash-card i{
     padding-left: 10px;
@@ -457,11 +477,9 @@ header .navbar-logo img{
     }
     .accounts-section .cash-card{
         width: 100%;
-
     }
 }
 /* End Bank Accounts */
-
 /* Start Payments Section  */
 .payment .container{
     display: flex;
@@ -471,7 +489,6 @@ header .navbar-logo img{
 .payment .cards-payement h2{
     font-size: xx-large;
 }
-
 .payment  .cards-payement{
     width: 49%;
 }
@@ -491,18 +508,16 @@ header .navbar-logo img{
 .payment .cards-payement .card_right{
     width: 41%;
 }
-.payment .cards-payement i{
-    margin-bottom: 50px;
-    font-size: 35px;
+.payment .cards-payement img{
+    width: 50px;
+    padding: 20px 0px;
 }
 .payment .transfer{
     width: 48%;
 }
 .payment .container .transfer{
     display: flex;
-    background-color: rgb(255 255 255);
 }
-
 .payment .container .transfer .card{
     background-color: black;
     position: relative;
@@ -530,14 +545,11 @@ header .navbar-logo img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-left: 50px;
-    margin-top: 15px;
+    margin: 15px 0px 0px 50px;
     position: relative;
     background-image: url(data:image/jpeg;base64,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);
     background-size: cover;
-
 }
-
 .card h4{
     text-align: center;
     padding-top: 15px;
@@ -549,8 +561,7 @@ header .navbar-logo img{
 .card .money h2{
     margin-top: 15px;
     text-align: center;
-   padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px;
     box-shadow: -2px -2px 5px rgba(46, 46, 46, 0.437) inset,
     2px 2px 10px rgba(46, 46, 46, 0.437) inset;
 }
@@ -570,7 +581,6 @@ header .navbar-logo img{
 .card .numbers div{
     color: #1f2021;
     position: relative;
-   
 }
 .payment .container .transfer .Pay .icons .save {
     background-color: black;
@@ -583,8 +593,7 @@ header .navbar-logo img{
     padding: 10px;
     line-height: 20px;
     position: relative;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin: 15px 0px 25px;
     top: 15px;
     left: 80px;
   }
@@ -600,8 +609,8 @@ header .navbar-logo img{
     line-height: 20px;
     position: relative;
     left: 200px;
-   bottom:  25px;
-   z-index: 2;
+    bottom:  25px;
+    z-index: 2;
   }
   .payment .container .transfer .Pay .icons .send{
     background-color: rgb(114 228 132);
@@ -614,20 +623,26 @@ header .navbar-logo img{
     padding: 10px;
     line-height: 20px;
     position: relative;
-   margin-top: 15px;
-   margin-bottom: 15px;
-   bottom: -130px;
-   right: 60px;
-   
-  }
-  .payment .cards-payement{
-    background-color: rgb(253 253 253);
+    margin: 15px 0px;
+    bottom: -130px;
+    right: 60px;
   }
   .transfer .Pay .innerpay{
     padding-right: 25px;
   }
+@media (max-width: 990px) {
+    .payment .container{
+        flex-direction: column;
+    }
+    .payment .container > div{
+        width:100%
+    }
+    .payment .container .transfer{
+        display: none;
+    } 
+}
 /* End Payments Section  */
-/* start customers */
+/* start Section Customers */
 .customers {
     background-color: #f8f8f8;
     padding: 100px 0px;
@@ -642,7 +657,6 @@ header .navbar-logo img{
 .button-next {
     position: absolute;
     top: 50%;
-    /* z-index: 99999999999; */
 }
 .button-next {
     right: 100px;
@@ -795,7 +809,6 @@ header .navbar-logo img{
 .app-section .container .Aheader .header2{
     padding-left: 60px;
 }
-
 .app-section .container .os-btn{
 display: flex;
 justify-content: space-around;
@@ -817,13 +830,10 @@ justify-content: space-around;
     background-color: black;
     margin-right: 10px;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     border-radius: 4px;
     color: white;
     font-size: x-small;
-    padding-left: 20px;
-    padding-right: 20px;
     align-items: center;
     transition: background-color 0.3s;
 }
@@ -843,7 +853,6 @@ color: rgba(255, 255, 255, 0.812);
 .footer{
     background-color: var(--text-color);
     color: white;
-
 }
 .footer .container .up-box {
     display: flex;
@@ -855,11 +864,12 @@ color: rgba(255, 255, 255, 0.812);
 }
 .footer .container .up-box .icon-box .icons i{
     font-size: 20px;
-    padding-top:10px;
-    padding-right: 20px;
+    padding: 10px 20px 0px 0px ;
 }
 .footer .container .up-box .links{
     padding-right: 30px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .footer .container .up-box .links li{
     padding-bottom: 10px;
@@ -881,5 +891,17 @@ color: rgba(255, 255, 255, 0.812);
 .footer .down-box .container{
     padding: 20px 0px ;
     text-align: center;
+}
+@media (max-width: 990px) {
+    .footer .container .up-box {
+        display: block;
+    }
+    .footer .container .up-box .icon-box{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer .container .up-box .links{padding:0px}
 }
 /* End Style to Footer */

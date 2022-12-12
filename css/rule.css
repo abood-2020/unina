@@ -13,6 +13,7 @@
 :root{
     --main-color:#72E485;
     --yellow-color:#F9D658;
+    --heading-color:#0d0448;
     --text-color:#101010;
     --gray-color:#EEEDF0;
     --light-color : #F8F8F8;
@@ -24,6 +25,9 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Larsseit'
 }

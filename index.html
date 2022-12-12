@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Font Awesome liabary -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- css Files Liabary to Icons -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/rule.css" />
+    <link rel="stylesheet" href="css/dark.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>UNINE Platform</title>
+
   </head>
   <body>
     <!-- start Header in website -->
@@ -57,6 +60,13 @@
           <div class="sign-btns">
             <a href="">Sign up</a>
             <a href="" class="btn">Get a demo</a>
+          </div>
+          <div id="icons" style="margin-left: 20px;">
+            <i class="fa-solid fa-moon" id="toggleDark"></i>
+            <!-- <i class="fa-solid fa-plus" onclick="ChangeFontSise('increase')"></i>
+            <i class="fa-solid fa-minus" onclick="ChangeFontSise('decrease')"></i>
+            <i class="fa-solid fa-arrow-rotate-right" onclick="resetBGClr()"></i>
+            <i class="fa-solid fa-palette" onclick="changeBGclr()"></i> -->
           </div>
         </nav>
       </div>
@@ -113,6 +123,7 @@
         </div>
       </div>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <!-- End Header in Website -->
     <!-----Transaction section start----------->
     <section class="transaction-section">
@@ -204,7 +215,7 @@
             See it all at a glance when you link your cash accounts,credit
             cards,investments,and bills
           </p>
-          <a href="#">
+          <a class="btn" href="#" >
             Try for now
             <i class="fa-solid fa-arrow-right"></i>
           </a>
@@ -222,7 +233,7 @@
           </h2>
           <div class="card-pay">
             <div class="card_left">
-              <i class="fa fa-globe"></i>
+              <img src="img/Globality.png" alt="">
               <h3>Globality</h3>
               <p>
                 Send payments to the person<br> in frint of you and the rest of <br>the
@@ -230,7 +241,7 @@
               </p>
             </div>
             <div class="card_right">
-              <i class="fa-solid fa-building-columns"></i>
+              <img src="img/Integrate.png" alt="">
               <h3>Integrate</h3>
               <p>
                 We work with local banks and overseas banks so you don't have to
@@ -249,9 +260,9 @@
             </p>
           </div>
             <div class="icons">
-              <dv class="save">
+              <div class="save">
                 <p> <i class="fa-solid fa-sack-dollar"></i><br><p class="par1">Save</p> </p>
-              </dv>
+              </div>
               <div class="send">
                 <p><i class="fa-solid fa-money-bill-trend-up"></i> <p class="par1">Sent</p></p>
               </div>
@@ -291,67 +302,67 @@
           <button><i class="fa-solid fa-angle-left"></i></button>
         </div>
         <!----- 2 Box Customer info ----->
-        <div class="box-content">
-          <div class="box-customer">
-            <div class="icon-double-quotes">
-              <i class="fa-solid fa-quote-right"></i>
-            </div>
-            <div class="tital-pra">
-              <h4>I paid off $24,000 first year</h4>
-              <p>
-                “Without the system and the support.I br would have been
-                canoeing without a paddle! Thanks for being my paddle, UNINE.
-                😉👍💪”
-              </p>
-            </div>
-            <hr />
-            <div class="customer-info">
-              <div class="customer-photo">
-                <img src="img/person.jpg" alt="man" />
-                <div class="person-info">
-                  <p>Ronald Richards</p>
-                  <p>First Years of using UNINE</p>
+        <div class=" box-content">
+            <div class="box-customer">
+              <div class="icon-double-quotes">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="tital-pra">
+                <h4>I paid off $24,000 first year</h4>
+                <p>
+                  “Without the system and the support.I br would have been
+                  canoeing without a paddle! Thanks for being my paddle, UNINE.
+                  😉👍💪”
+                </p>
+              </div>
+              <span class="hor-line"></span>
+              <div class="customer-info">
+                <div class="customer-photo">
+                  <img src="img/person.jpg" alt="man" />
+                  <div class="person-info">
+                    <p>Ronald Richards</p>
+                    <p>First Years of using UNINE</p>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="box-customer">
+              <div class="icon-double-quotes">
+                <i class="fa-solid fa-quote-right"></i>
               </div>
-            </div>
-          </div>
-          <div class="box-customer">
-            <div class="icon-double-quotes">
-              <i class="fa-solid fa-quote-right"></i>
-            </div>
-            <div class="tital-pra">
-              <h4>My net worth is already $43k</h4>
-              <p>
-                "When I got frustrated with Mint and its lack of flexibility، I
-                found YNAS through some random blog post. I never looked back.
-                💰"
-              </p>
-            </div>
-            <hr />
-            <div class="customer-info">
-              <div class="customer-photo">
-                <img src="img/person.jpg" alt="man" />
-                <div class="person-info">
-                  <p>Wade Warren</p>
-                  <p>3 Years of using UNINE</p>
+              <div class="tital-pra">
+                <h4>My net worth is already $43k</h4>
+                <p>
+                  "When I got frustrated with Mint and its lack of flexibility، I
+                  found YNAS through some random blog post. I never looked back.
+                  💰"
+                </p>
+              </div>
+              <span class="hor-line"></span>
+              <div class="customer-info">
+                <div class="customer-photo">
+                  <img src="img/person.jpg" alt="man" />
+                  <div class="person-info">
+                    <p>Wade Warren</p>
+                    <p>3 Years of using UNINE</p>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
             </div>
-          </div>
         </div>
         <!-----Button Next----->
         <div class="button-next">
@@ -359,6 +370,7 @@
         </div>
       </div>
     </section>
+
     <!-- End Customer Section -->
     <!-- Start Get App section -->
     <section class="app-section">
@@ -434,6 +446,9 @@
         </div>
       </div>
     </section>
+    <script src="js/script.js"></script>
+
     <!-- End Footer Section -->
+    <!-- Javascript Files -->
   </body>
 </html>
