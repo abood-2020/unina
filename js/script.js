@@ -31,6 +31,7 @@ toggle.addEventListener('click', function () {
 		document.body.classList.toggle('dark-theme');
 	}
 });
+
 // function ChangeFontSise(type) {
 // 	let ids = ['#d'];
 // 	ids.forEach((id) => {
