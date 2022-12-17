@@ -143,7 +143,6 @@ header .navbar-logo img{
 
 /* Start Style to Landing */
 .landing{
-    min-height: 100vh;
     background: #1f2021;
     position: relative;
     padding: 20px 0px;
